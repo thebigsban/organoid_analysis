@@ -2,11 +2,7 @@
 
 **This repo contains the instructions and code for the re-analysis of data found in the paper ["Cell stress in cortical organoids impairs molecular subtype specification"](https://www.nature.com/articles/s41586-020-1962-0), published in Nature on January 29, 2020**
 
-
-
 The motivation behind these analyses is to explore computational methods of reconstructing the range of cell subtypes in cortical organoids. The hypothesis is that organoid stress induces local and/or global transformations in the gene expression profile of cell subtypes such that direct comparison of gene expression profiles of cell subtypes collected directly from human cortical areas are not suitable to classify cell subtypes. We believe that cell classes and subtypes are still present in organoids, and that their classes and subtypes are computationally recoverable, possible after some deformation/registration/regression in gene expression space.
-
-
 
 ## 1. The data
 
@@ -49,14 +45,12 @@ In the paper, they mention using the following datasets:
     * Marton, R.M. Differentiation and maturation of oligodendrocytes in human three-dimensional neural cultures. 
       
       * Found [here](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE115011), not yet downloaded
-        
-        
 
 ## 2. Pre-processing
 
 Batch correction (citation 39)
 
-* each cell within batch normalized to highest expressing gene, making range of expression [0,1]
+* each cell within a batch was normalized to highest expressing gene, making range of expression [0,1]
 
 * values were multiplied by average number of counts within a batch
 
