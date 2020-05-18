@@ -16,7 +16,7 @@ In the paper, they mention using the following datasets:
   
   * One set was found [here](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE132672), on the NCBI website, totaling approx. 1.9gb extracted to 4gb, saved in folder "Organoid_NCBI"
   
-  * Another set was found [here]([UCSC Cell Browser](https://cells.ucsc.edu/?ds=organoidreportcard)), on the UCSC Organoid report card website, totaling approx. 251mb extracted to 3.5gb, saved in folder "Organoid_UCSC"
+  * Another set was found [here](https://cells.ucsc.edu/?ds=organoidreportcard), on the UCSC Organoid report card website, totaling approx. 251mb extracted to 3.5gb, saved in folder "Organoid_UCSC"
 
 * Previously-published organoid single-cell data from 276,054 cells across 8 protocols. 
   
