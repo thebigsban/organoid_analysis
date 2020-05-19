@@ -25,6 +25,7 @@ TODO:
 * IDEA: subset/sample data, perform PCA on subset, apply projection to full-dataset for tSNE/visualization/clustering
   
   * subset UCSC Organoid dataset to 20,000 cells; PCA with 10 or 100 resulting components takes a reasonable amount of time; performing the full SVD takes a while (let it run for like 1hr, and didn't finish)
+  * maybe run PCA on the physio dataset and then apply that DR/embedding to organoid dataset
 
 TODO:
 
