@@ -37,3 +37,41 @@ TODO:
   * partial dataset (10%)
   
   * full dataset
+
+#### 2020-05-20
+
+* successfully got an anndata object to be created from numpy array, can now proceed with replicating organoid analysis pipelines
+
+* also re-downloaded the organoid datasets and metadata; had the primary cell data in the place of organoid data, and was messing with some of the read/write stuff
+
+* pretty sure the expression matrix that I'm reading in has normalized counts, which can directly be piped in to Seurat v2 or scanpy
+  
+  * "discard cells with fewer than 500 genes per cell"
+    * scanpy.pp.filter_cells
+  * "discard cells with more than 10% of reads aligning to mitochondrial genes"
+  * log 2 
+  * pipe into seurat to find highly variable genes
+
+* created jupyter notebook to hold analysis results from Scanpy/paper replication
+
+Resource for Scanpy:
+
+[Preprocessing and clustering 3k PBMCs &mdash; Scanpy documentation](https://scanpy-tutorials.readthedocs.io/en/latest/pbmc3k.html)
+
+Basically have all of the above written in scanpy; there's some interesting requirements necessary to get the memory performance that they claim. 
+
+
+
+Full import + preprocessing takes about 8 min,
+
+TO DO:
+
+* finalize Seurat analysis (basically utilizing the variable genes or not)
+
+* continue writing the pipeline: 
+  
+  * PCA
+  
+  * tSNE
+  
+  * Louvain-Jaccard Clustering
